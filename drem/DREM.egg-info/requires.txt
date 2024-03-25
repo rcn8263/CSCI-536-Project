@@ -1,0 +1,5 @@
+tensorflow-gpu<2,>=1.1.0
+tensorflow_ranking>=0.1.0
+numpy>=1.12.1
+six>=1.10.0
+scipy>=1.0.0

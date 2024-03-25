@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: DREM
+Version: 0.1.0
+Summary: TODO
+Home-page: TODO
+Author: Qingyao Ai
+Author-email: aiqingyao@gmail.com
+License: BSD
+Keywords: TODO
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache License
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+TODOTODO
