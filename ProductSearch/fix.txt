@@ -1,0 +1,2 @@
+neural.py, line 214:
+	scores = scores.masked_fill_(mask.bool(), -1e18)
