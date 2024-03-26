@@ -48,7 +48,7 @@ class ParagraphVectorCorruption(nn.Module):
         #batch_size, review_word_count, embedding_size
         probs = inputs.data.new().resize_(inputs.size()[:-1]).fill_(drop_prob)
         #batch_size, review_word_count
-        mask = torch.bernoulli(probs).byte().unsqueeze(-1) #the probability of drawing 1
+        mask = torch.bernoulli(probs).bool().unsqueeze(-1) #the probability of drawing 1
         #batch_size, review_word_count, 1
         inputs.data.masked_fill_(mask, 0).mul_(1./(1-drop_prob)) #drop_prob to fill data to 0
         return inputs

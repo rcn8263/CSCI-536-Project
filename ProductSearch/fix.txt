@@ -1,2 +1,14 @@
+Changes to the code to get it working
+
+
 neural.py, line 214:
+	scores = scores.masked_fill_(mask, -1e18)
+	|
+	V
 	scores = scores.masked_fill_(mask.bool(), -1e18)
+	
+PVC.py, line 51:
+	mask = torch.bernoulli(probs).byte().unsqueeze(-1) #the probability of drawing 1
+	|
+	V
+	mask = torch.bernoulli(probs).bool().unsqueeze(-1) #the probability of drawing 1
